@@ -1,10 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using Unity.Collections;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 /// <summary>
 /// Class which manages the game
@@ -110,7 +104,7 @@ public class GameManager : MonoBehaviour
             {
                 PlayerPrefs.SetInt("lives", playerHealth.currentLives);
             }
-            
+
             playerHealth.currentLives = PlayerPrefs.GetInt("lives");
 
             // Set health accordingly
@@ -118,7 +112,7 @@ public class GameManager : MonoBehaviour
             {
                 PlayerPrefs.SetInt("health", playerHealth.currentHealth);
             }
-            
+
             playerHealth.currentHealth = PlayerPrefs.GetInt("health");
         }
         KeyRing.ClearKeyRing();
@@ -193,7 +187,7 @@ public class GameManager : MonoBehaviour
             {
                 Instantiate(victoryEffect, transform.position, transform.rotation, null);
             }
-        }     
+        }
     }
 
     [Header("Game Over Settings:")]

@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// This class handles the health state of a game object.
@@ -63,7 +60,7 @@ public class Health : MonoBehaviour
 
     // The time to respawn at
     private float respawnTime;
-    
+
     /// <summary>
     /// Description:
     /// Checks to see if the player should be respawned yet and only respawns them if the alloted time has passed
@@ -262,7 +259,7 @@ public class Health : MonoBehaviour
                 else
                 {
                     respawnTime = Time.time + respawnWaitTime;
-                } 
+                }
             }
             else
             {
@@ -276,7 +273,7 @@ public class Health : MonoBehaviour
                 }
                 GameOver();
             }
-            
+
         }
         else
         {
